@@ -35,7 +35,7 @@ lottie_coding = load_lottieurl("https://assets1.lottiefiles.com/packages/lf20_Db
 lottie_coding1 = load_lottieurl("https://assets9.lottiefiles.com/private_files/lf30_qxdvwwgs.json")
 #images
 img_tableau = PIL.Image.open("images/tableauProj_1.png")
-img_powerBI = PIL.Image.open("images/incomeStat_PowerBI.png")
+#img_powerBI = PIL.Image.open("images/incomeStat_PowerBI.png")
 
 #Header
 #Container for organizing
@@ -86,7 +86,7 @@ with st.container():
     st.write("---")
     st.header("My Projects")
     st.write("##")
-    image_column,text_column = st.columns((1,2))
+    image_column,text_column = st.columns((1,1))
     with image_column:
     #inserting images
         st.image(img_tableau)
@@ -97,7 +97,7 @@ with st.container():
         st.subheader(" Project Title - 'Most Popular Ride Stations: Tableau Dashboard' ")
         st.write(
         """
-        Project Description -1
+        Project Description: This is the data visualization project of ride sharing platform
 
         """
     )
@@ -107,7 +107,7 @@ with st.container():
 
 with st.container():
 
-    image_column,text_column = st.columns((1,2))
+    image_column,text_column = st.columns((1,1))
     with image_column:
     #inserting images
         st.image(img_powerBI)
@@ -116,7 +116,7 @@ with st.container():
         st.subheader(" The Project Title - 2")
         st.write(
         """
-        Project Description - 2 Goes Here
+        Project Description: This is the comparative analysis of MS Inc. 2 years' income statement
 
         """
     )
